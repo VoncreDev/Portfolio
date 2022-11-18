@@ -1,6 +1,6 @@
 ### Information
 
-- This was made by using HTML, CSS and JavaScript.
+- This was made by using **HTML**, **CSS** and **JavaScript**.
 
 - The method of creating this artwork, was by creating a **Canvas** element in **HTML**, making it the same width and height of the window, using **CSS**
 
