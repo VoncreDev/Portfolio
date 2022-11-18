@@ -7,7 +7,7 @@
 - Then, to animate the canvas, I created a grid on the canvas, by using **JavaScript**.
 
 - The max amount of pixels that can fit on the canvas are **300x150**, meaning I had a maximum of **45,000 Pixels** to work with.
-- I modified the pixels by going along the **X and Y Axis** and setting them to the **RGB** value which is calculated with the corrosponding formula:
+- I modified the pixels by going along the **X and Y Axis** and setting them to the **RGB** value which is calculated with the formula:
 
 ```js
 var n = getMillisecondsSinceEpoch() + GridIndex * Math.sin((getMillisecondsSinceEpoch() / 10) * (Math.PI / 180)) / 2
