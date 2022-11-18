@@ -1,7 +1,7 @@
 var Canvas
 var CTX
 
-function getSecondsSinceEpoch(){
+function getMillisecondsSinceEpoch(){
     var now = new Date()  
     var utcMilllisecondsSinceEpoch = now.getTime() + (now.getTimezoneOffset() * 60 * 1000)  
     
@@ -29,7 +29,7 @@ function createGrid(GridSize, GridPadding){
         var x = (GridIndex % (300 / GridSize)) * GridSize + GridPadding / 2
         var y = Math.floor(GridIndex / (300 / GridSize)) * GridSize + GridPadding / 2
 
-        var n = getSecondsSinceEpoch() + GridIndex * Math.sin((getSecondsSinceEpoch() / 10) * (Math.PI / 180)) / 2
+        var n = getMillisecondsSinceEpoch() + GridIndex * Math.sin((getMillisecondsSinceEpoch() / 10) * (Math.PI / 180)) / 2
 
         var r = Math.floor(
             Math.sin(
